@@ -10,4 +10,7 @@ public interface CourseRepository extends JpaRepository<Course, Long>, CourseRep
     //DERIVED QUERY
     List<Course> findCoursesByRating(int rating);
 
+    //CUSTOM QUERY
+    List<Course> findCourseByCustomer(Long customerId);
+
 }
