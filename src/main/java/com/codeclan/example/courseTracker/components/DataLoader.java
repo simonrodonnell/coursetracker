@@ -36,6 +36,33 @@ public class DataLoader implements ApplicationRunner {
 
         Booking booking1 = new Booking("05-12-19", course1, customer1);
         bookingRepository.save(booking1);
+//-----------------------------------------------------------------------------------------------------
+        Customer customer2 = new Customer("Jules", 65, "Glasgow");
+        customerRepository.save(customer2);
+
+        Course course2 = new Course("Advanced Ruby", "Edinburgh", 2);
+        courseRepository.save(course2);
+
+        Booking booking2 = new Booking("07-12-19", course2, customer2);
+        bookingRepository.save(booking2);
+//-----------------------------------------------------------------------------------------------------
+        Customer customer3 = new Customer("Conchita", 15, "Bogota");
+        customerRepository.save(customer3);
+
+        Course course3 = new Course("Advanced Agile", "Edinburgh", 3);
+        courseRepository.save(course3);
+
+        Booking booking3 = new Booking("03-12-19", course3, customer3);
+        bookingRepository.save(booking3);
+//-----------------------------------------------------------------------------------------------------
+        Customer customer4 = new Customer("Mohammed", 46, "Algiers");
+        customerRepository.save(customer4);
+
+        Course course4 = new Course("Advanced Sinatra", "Edinburgh", 3);
+        courseRepository.save(course4);
+
+        Booking booking4 = new Booking("01-12-19", course4, customer4);
+        bookingRepository.save(booking4);
 
     }
 }
